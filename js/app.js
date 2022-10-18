@@ -15,11 +15,9 @@ function generateThumbnailLink() {
   let res = document.querySelector('input[name="resolution"]:checked').value;
   // assign regex match to new var (as array)
   const regexArr = urlInput.match(regex);
-  console.log("Regex Array", regexArr);
   // if regex match is null/undefined return invalid msg
   if (regexArr == null) {
-    imageUrl.textContent = `Invalid URL`;
-    console.log("Invalid URL");
+    imageUrl.textContent = `Invalid URL. Please try again.`;
     return;
   }
   // otherwise...
