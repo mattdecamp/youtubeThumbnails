@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <!-- Primary Meta Tags -->
+    <title></title>
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <link rel="canonical" href="" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="" />
+    <meta property="twitter:title" content="" />
+    <meta property="twitter:description" content="" />
+    <meta property="twitter:image" content="" />
+    <!-- Favicon -->
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="#" /> -->
+  </head>
+  <body>
+    <h1>Hey, Matt.</h1>
+    <form action="" id="generateLink" method="POST" enctype="multipart/form-data" onsubmit="return false">
+      <label for="url">Enter URL</label>
+      <input type="url" name="url" id="url" placeholder="https://..."/>
+      <fieldset>
+        <legend>Choose a resolution</legend>
+        <input
+          type="radio"
+          name="resolution"
+          id="resStandard"
+          class="resChoice"
+          value="sd"
+          checked
+        />
+        <label for="resStandard">Standard</label>
+
+        <input
+          type="radio"
+          name="resolution"
+          id="resMedium"
+          class="resChoice"
+          value="mq"
+        />
+        <label for="resMedium">Medium</label>
+
+        <input
+          type="radio"
+          name="resolution"
+          id="resHigh"
+          class="resChoice"
+          value="hq"
+        />
+        <label for="resHigh">High</label>
+
+        <input
+          type="radio"
+          name="resolution"
+          id="resMax"
+          class="resChoice"
+          value="maxres"
+        />
+        <label for="resMax">Max</label>
+      </fieldset>
+
+      <input type="submit" value="Submit" />
+    </form>
+    <p id="imageUrl"></p>
+  </body>
+  <script src="app.js"></script>
+</html>
